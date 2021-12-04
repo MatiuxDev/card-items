@@ -31,7 +31,7 @@ const infoCards: Array<infoCard> = [
 ];
 function ContainerComponent() {
   const [selectedCard, setSelectedCard] = useState<infoCard | null>(null);
-  const selectCardAndSendToState = (e: MouseEvent<HTMLDivElement>, card: infoCard, index: number) => {
+  const selectCardAndSendToState = (e: MouseEvent<HTMLDivElement>, card: infoCard) => {
     e.preventDefault();
     setSelectedCard(card);
   };
@@ -47,7 +47,7 @@ function ContainerComponent() {
     {selectedCard?.to}
 
       {infoCards.map((card, index) => (
-          <Card key={index} {...card} selectCard={(e, card ) => selectCardAndSendToState(e, card, index)}  />
+          <Card key={index} {...card} selectCard={(e, card ) => selectCardAndSendToState(e, card)}  />
       ))}
     </Container>
     </>
