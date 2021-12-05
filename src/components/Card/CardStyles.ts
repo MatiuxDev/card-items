@@ -5,7 +5,7 @@ interface isActive {
 }
 export const CardContainer = styled.div<isActive>`
 width: 22rem;
-border: 2px solid ${(props) => (props.isActive ? '#8be6da' : '#000')};} ;
+border: 2px solid ${(props) => (props.isActive ? '#8be6da' : '#E4E6E7')};} ;
 border-radius: 10px;
 margin: 15px 0;
 padding: 20px;
