@@ -4,7 +4,7 @@ interface isActive {
   isActive: boolean;
 }
 export const CardContainer = styled.div<isActive>`
-width: 17rem;
+width: 22rem;
 border: 2px solid ${(props) => (props.isActive ? '#8be6da' : '#000')};} ;
 border-radius: 10px;
 margin: 15px 0;
@@ -15,9 +15,9 @@ cursor: pointer;
 `;
 
 export const CardTitle = styled.h3`
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1.2em;
-  margin: 0;
+  padding: 5px 0;
 `;
 export const CardText = styled.p`
   font-weight: 300;
@@ -29,7 +29,7 @@ export const CardText = styled.p`
 export const CardTime = styled.p`
   font-weight: 400;
   font-size: 0.8em;
-  margin: 0;
+  padding: 5px 0;
 `;
 
 export const CardStatus = styled.div`

@@ -1,4 +1,4 @@
-import { useState, MouseEvent } from 'react';
+import { MouseEvent } from 'react';
 import {
   CardContainer,
   CardStatusIconCheck,
@@ -34,7 +34,7 @@ function Card(props: CardProps) {
           <CardText>{description}</CardText>
           <CardTime>
             {from}
-            <span> * </span>
+            <span> • </span>
             {to}
           </CardTime>
         </div>
